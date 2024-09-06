@@ -1,0 +1,46 @@
+:root {
+  --color-Russionviolet: hsl(262, 100%, 8%);
+  --medium-slateBlue: hsl(278, 37%, 53%);
+  --color-Mauve: hsl(278, 75%, 88%);
+  --color-Platinum: hsl(210, 14%, 89%);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  width: 1000px;
+  margin: auto;
+  background-color: var(--medium-slateBlue);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: var(--color-Russionviolet);
+  margin-top: 15rem;
+}
+
+footer a {
+  color: var(--color-Mauve);
+}
+
+@media (max-width: 768px) {
+  body {
+    width: calc(100% - 6rem);
+    margin: 3rem;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}

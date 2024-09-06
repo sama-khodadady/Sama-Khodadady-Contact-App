@@ -1,0 +1,52 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-green: hsl(134, 61%, 41%);
+  --color-red: hsl(354, 70%, 54%);
+}
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: var(--color-white);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.modalActions {
+  margin-top: 20px;
+}
+
+.modalActions button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modalActions button:active {
+  transform: scale(0.95);
+}
+
+.yesButton {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.noButton {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}

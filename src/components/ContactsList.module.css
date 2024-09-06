@@ -1,0 +1,186 @@
+:root {
+  --color-Russionviolet: #10002b;
+  --medium-slateBlue: hsl(278, 37%, 53%);
+  --color-Mauve: #e6c8f7;
+  --color-Platinum: #dee2e6;
+  --color-palepurple: #e7d8f7;
+  --color-white: hsl(0, 0%, 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 0 40px 40px;
+  background-color: var(--color-white);
+}
+
+.container .goBack {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 22px;
+  font-size: 25px;
+  background: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: var(--medium-slateBlue);
+}
+
+.container .goBack:active {
+  transform: scale(0.95);
+}
+
+.container .table {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .table .tableHeader {
+  width: calc(100% - 4rem);
+  display: flex;
+  gap: 20px;
+  margin: 2rem;
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.container .table .button {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  align-items: center;
+  gap: 20px;
+  width: 180px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-Platinum);
+  cursor: pointer;
+}
+
+.container .table .button:active {
+  transform: scale(0.95);
+}
+
+.container .table .button .selectAllButton,
+.container .table .button .deleteAllButton {
+  color: var(--medium-slateBlue);
+  width: 20px;
+  height: 22px;
+}
+
+.container .table .button span {
+  font-size: 18px;
+  font-variant: var(--color-Russionviolet);
+}
+
+.containertable .button:hover {
+  cursor: pointer;
+}
+
+.container .table .button:active {
+  transform: scale(0.95);
+}
+
+.container .devider {
+  width: calc(100% - 4rem);
+  margin: 0 2rem;
+  border: 1px solid var(--color-Platinum);
+  border-radius: 5px;
+}
+
+.container .table thead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(90% - 4rem);
+  padding: 8px 8px;
+  border-radius: 5px;
+  color: var(--color-Russionviolet);
+  background-color: var(--color-Mauve);
+}
+
+.container .table thead th:last-child {
+  margin-right: 5rem;
+}
+
+.container .table tbody {
+  width: calc(100% - 4rem);
+  margin: 0 2rem 1rem;
+  color: var(--color-Russionviolet);
+}
+
+.container .table .contactEmpty {
+  width: calc(100% - 4rem);
+  height: 100px;
+  background-color: var(--color-palepurple);
+  margin: 0 2rem 1rem;
+  text-align: center;
+  line-height: 100px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    width: calc(100% - 4rem);
+    margin: 0 2rem;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .container .goBack {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 15px;
+  }
+
+  .container .devider {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container .table .tableHeader {
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+  }
+
+  .table .tableHeader .button {
+    width: 20%;
+    padding: 9px 0;
+    gap: 5px;
+  }
+
+  .table .tableHeader .button span {
+    font-size: 6px;
+  }
+
+  .container .table .button .selectAllButton,
+  .container .table .button .deleteAllButton {
+    width: 8px;
+    height: 8px;
+  }
+
+  .table .tableHeader thead {
+    width: 80%;
+    gap: 10px;
+    padding: 9px 5px;
+  }
+
+  .table .tableHeader thead th {
+    font-size: 6px;
+  }
+
+  .container .table thead th:last-child {
+    margin-right: 0;
+  }
+
+  .container .table tbody {
+    width: 100%;
+    margin: 0;
+  }
+}
